@@ -23,11 +23,13 @@ gulp.task('assets', ['durandal'], function() {
 });
 
 gulp.task('watch', function () {
-  watch({glob: ['src/**/*.js', 'src/**/*.html'], verbose: true}, ['assets']);
+  watch({glob: ['src/**/*.js', 'src/**/*.html'], verbose: true}, ['assets' ,'jshint']);
 });
 
 gulp.task('jshint', function() {
-  return gulp.src('src/assets/**/*.js')
+  return gulp.src('src/**/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('jshint-stylish'));
 });
 
 gulp.task('copy-to-tmp', function() {
@@ -42,7 +44,6 @@ gulp.task('durandal', ['copy-to-tmp'], function() {
 
   return durandal({
     baseDir: '.tmp/src',
-    minify: false,
   }).pipe(gulp.dest('dist/'))
     .pipe(gulp.src('.tmp').pipe(clean()))
 });

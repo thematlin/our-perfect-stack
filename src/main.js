@@ -6,8 +6,15 @@ require.config({
     plugins : '../bower_components/durandal/js/plugins',
     transitions : '../bower_components/durandal/js/transitions',
     knockout: '../bower_components/knockout.js/knockout',
-    modules: 'modules'
-  }
+    bootstrap: '../bower_components/bootstrap/dist/js/bootstrap'
+  },
+  shim: {
+      "bootstrap": {
+        deps: ["jquery"],
+        exports: "$.fn.popover"
+      }
+  },
+  enforceDefine: true
 });
 
 define(function(require) {
@@ -24,10 +31,7 @@ define(function(require) {
     dialog: true
   });
 
-  console.log('asd');
   app.start().then(function() {
-    viewLocator.useConvention('assets/modules', 'assets/modules');
-
-    app.setRoot('assets/modules/shell');
+    app.setRoot('assets/modules/shell', 'entrance');
   });
 });
