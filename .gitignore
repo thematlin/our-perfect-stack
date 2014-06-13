@@ -1,5 +1,7 @@
-### Bower ###
+### Perfect stack ignores ###
 bower_components
+dist
+.tmp
 
 ###OSX###
 
@@ -8,7 +10,8 @@ bower_components
 .LSOverride
 
 # Icon must ends with two \r.
-Icon
+Icon
+
 
 # Thumbnails
 ._*
