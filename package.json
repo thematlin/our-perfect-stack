@@ -1,0 +1,22 @@
+{
+  "name": "our-perfect-stack",
+  "version": "0.0.0",
+  "description": "Our perfect stack",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thematlin/our-perfect-stack.git"
+  },
+  "keywords": [
+    "stack",
+    "boilerplate"
+  ],
+  "author": "Mattias & Andreas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thematlin/our-perfect-stack/issues"
+  },
+  "homepage": "https://github.com/thematlin/our-perfect-stack",
+  "devDependencies": {
+    "gulp": "^3.8.0"
+  }
+}
