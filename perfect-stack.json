@@ -1,0 +1,30 @@
+{
+  "name": "spasibas-stack-template",
+  "knowabungaDisplayName": "Spasibas Stack Template",
+  "version": "0.0.1",
+  "description": "SPA built with Durandaljs",
+  "license" : "MIT",
+  "contributors": [{
+      "name": "Andreas Nilsson",
+      "email": "andreas.nilsson@tretton37.com"
+    }, {
+      "name": "Mattias Lindahl",
+      "email": "matlin@tretton37.com"
+    }
+  ],
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/thematlin/our-perfect-stack.git"
+  },
+  "homepage": "https://github.com/thematlin/our-perfect-stack",
+  "keywords": ["spa", "boilerplate"],
+  "_knowabungaCategories": [
+    "web-application", 
+    "mobile-web",
+    "single-page-app",
+    "background-job",
+    "desktop-app",
+    "windows-phone"
+  ],
+  "knowabungaCategory": "single-page-app"
+}
